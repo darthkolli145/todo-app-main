@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: hsl(236, 33%, 92%);
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: hsl(235, 24%, 19%);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: hsl(220, 98%, 61%);
+}
+
+h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+}
+
+#new-todo {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: hsl(235, 21%, 11%);
+    color: hsl(234, 39%, 85%);
+}
+
+#todo-list {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid hsl(233, 14%, 35%);
+    cursor: pointer;
+}
+
+.todo-item.completed .text {
+    text-decoration: line-through;
+    color: hsl(233, 11%, 84%);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background: hsl(235, 24%, 19%);
+}
+
+.filters button {
+    border: none;
+    background: none;
+    color: inherit;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.filters button.active {
+    color: hsl(220, 98%, 61%);
+}
+
+#clear-completed {
+    background: none;
+    border: none;
+    color: hsl(236, 9%, 61%);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#clear-completed:hover {
+    color: hsl(220, 98%, 61%);
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: inherit;
+    cursor: pointer;
+}
